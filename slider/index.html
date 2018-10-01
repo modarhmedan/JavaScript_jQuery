@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/slider.js">
+    </script>
+     <script src="https://use.fontawesome.com/64906f59e1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="buttons">
+        <h4>Animation</h4>
+        <div class="animation">
+          <div class="auto">
+            <button id="getauto">auto</button>
+            <form id="autospeed">
+                <input id="nautoSpeed" type="number" placeholder="the speed auto">
+                <select name="animation" id="auto" >
+                  <option value="manual">manual</option>
+                  <option value="auto">auto</option>
+                </select>
+                <input id="btnspeedauto" type="button"  value="select">
+            </form>
+          </div>
+          <select name="animation" id="animation" >
+            <option value="normal">normal</option>
+            <option value="fadein">fade in</option>
+            <option value="show">show</option>
+            <option value="slidedown">slide down</option>
+          </select>
+          <div class="speed">
+            <button id="getSpeed">speed animation</button>
+            <form id="formSpeed">
+              <input id="nSpeed" type="number">
+              <input id="btnSpeed" type="button"  value="select">
+            </form>
+          </div>
+          <div class="write">
+            <button id="getForm">write a phrase</button>
+            <form id="formText">
+              <input id="phrase" type="text" placeholder="phrase" required>
+              <input id="color" type="text" placeholder="color" required>
+              <input id="size" type="number" placeholder="size in px" required>
+              <input id="numberx" type="number" placeholder="coordinates x" required>
+              <input id="numbery" type="number" placeholder="coordinates y" required>
+              <input id="btn" type="button" value="edit">
+              <input id="btndelete" type="button" value="delete">
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="slides">
+        <div class="slide"><img src="images/1.jpg" alt="slide"></div>
+        <div class="slide"><img src="images/2.jpg" alt="slide"></div>
+        <div class="slide"><img src="images/3.jpg" alt="slide"></div>
+        <div class="slide"><img src="images/4.jpg" alt="slide"></div>
+      <div class="points">
+        <div class="minies">
+      </div>
+        <div class="bullet">
+      </div>
+      </div>
+      <i onclick="plusimg(1)"  class="fa fa-angle-right" aria-hidden="true"></i>
+      <i onclick= "plusimg(-1)" class="fa fa-angle-left" aria-hidden="true"></i>
+    </div>
+  </body>
+</html>
